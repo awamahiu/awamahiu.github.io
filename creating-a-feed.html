@@ -36,44 +36,152 @@
     </div>
 
     <div class="row">
-
         <div class="medium-12 large-12 columns compass shadow">
 
-         
-                   <h4>Creating A Feed</h4>
-                        <blockquote>You can create a Feed using Spreadsheet Software such as Microfost Excel, Apple Numbers or Google Docs. You can add as many fields as you like however, there are several fields you MUST include in order for ATLAS to work. They are listed below:</blockquote>
 
-                        <blockquote class="captionB">
+            <h4>Creating A Feed</h4>
+            <blockquote>Some of the fields in the data feed are used to build the map. Other fields allow the user to display location-specific, user-defined data. The data feeds will use six fields to build the map. Three of these fields <em>&#40;highlighted below&#41;</em> are required fields, and the other three fields are optional fields.</blockquote>
 
-                            <p>
-                                First Field
-                                <br>Second Field
-                                <br>Third Field
-                           
-                            </p>
+            <blockquote class="captionB">
 
-                        </blockquote>
+                <p>
+                    The <em>Latitude</em> Field
+                    <br>The <em>Longitude</em> Field
+                    <br>The <em>Name</em> Field
 
-                        <p class="medium-10 column">You can only share feeds that belong to you. Feeds that belong to you are distinguishable by the number of options you have access to under the Feeds Tab.</p>
+                </p>
 
+            </blockquote>
+
+            <p class="medium-10 column">You can only share feeds that belong to you. Feeds that belong to you are distinguishable by the number of options you have access to under the Feeds Tab.</p>
+
+
+
+            <div class="row">
+                <div class="small-12 column">
+                    <div class="smallSpace"></div>
+
+                    <table role="grid">
+                        <thead>
+                            <tr>
+                                <th>FIELD</th>
+                                <th>REQUIRED</th>
+                                <th>DESCRIPTION</th>
+                                <th>OPTIONS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Latitude</td>
+                                <td>YES</td>
+                                <td>The latitude in decimal degrees &#40;38.889722&#41;</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>Longitude</td>
+                                <td>YES</td>
+                                <td>The longitude in decimal degrees &#40;-77.008889&#41;</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>YES</td>
+                                <td>Displayed in the title bar of the info window when a user clicks on a map point.</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>Symbol</td>
+                                <td>NO</td>
+                                <td>The shape of the marker (pin).</td>
+                                <td>circle, square, triangle. defaults to circle.</td>
+                            </tr>
+                            <tr>
+                                <td>status_color</td>
+                                <td>NO</td>
+                                <td>Specifies the color of this map point. Can be either hex format or a string option &#40;e.g., "#000000" for black or "#FFFFFF" for white&#41;.</td>
+                                <td>String options: red, orange, blue, black, green. Defaults to blue.</td>
+                            </tr>
+                            <tr>
+                                <td>status_name</td>
+                                <td>NO</td>
+                                <td>Defines the meaning of this map point's color. Displayed in the info window when a user clicks on a map point. Also used to display a legend on the map for aggregation summary.</td>
+                                <td>N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            
+            <div class="row">
+            <div class="small-12 column">
+                
+                <h5>Optional User-Defined Fields</h5>
+                <blockquote>Additional fields can be included in the data feed as information to be displayed in an info window when a map point is clicked. Atlas simply displays the data included in these fields, with one exception:  URLs. The user can include URLs in the data feed, and Atlas will create a clickable button for each URL that open a window to that address.<br><br>
+
+Feeds can have as many Optional Fields as you like. Optional Field Names, and the corresponding data, are displayed in an info window when a user clicks on a map point. If the field name has multiple words, separate the words with an underscore. Atlas on Demand will replace the underscore with a space when displaying the field name (e.g., "report_date" would be displayed as "Report Date").
+                </blockquote>
+                
+                <h5>Formatting</h5>
+                <blockquote>Field names can also specify the formatting of the data by including a format key in the field name. Format Keys must be all uppercase and appended to the end of the optional field name, separated by a hyphen (e.g., report_date-DATE).
+                </blockquote>
+                
+                
+                <table role="grid">
+                        <thead>
+                            <tr>
+                                <th>FORMAT / KEY</th>
+                                <th>INPUT</th>
+                                <th>OUTPUT</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-DATE</td>
+                                <td>7/8/2014 or 8-Jul-14</td>
+                                <td>7/8/14</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>-TIME</td>
+                                <td>1:30PM or 13:30</td>
+                                <td>1:30PM</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>-DATETIME</td>
+                                <td>7/8/14 1:30PM or 7/8/2014 13:30</td>
+                                <td>7/8/14 1:30PM</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>-DOLLAR</td>
+                                <td>2310 or &#36;2320.00</td>
+                                <td>&#36;2320.00</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>-PERCENT</td>
+                                <td>.05 or 5&#37;</td>
+                                <td>5.0&#37;</td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                
+                
+            </div>
+        </div>
             
             
-                        <div class="row">
-                            <div class="medium-6 column">
-                                <img src="img/Access-Feeds.gif" />
-                                <blockquote class="caption">Accessing the Feeds Tab</blockquote>
-                            </div>
+        </div>
 
-                            <div class="medium-6 column">
-                                <img src="img/Visible_Feed.gif" />
-                                <blockquote class="caption">Activating a Feed</blockquote>
-                            </div>
-
-                        </div>
+        
+   
 
     </div>
-
-
 
     <footer>
         <div class="smallSpace"></div>

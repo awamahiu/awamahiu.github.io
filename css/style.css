@@ -415,4 +415,8 @@ footer {
       font-weight: bold;
       text-transform: uppercase; }
    
-    
+/* TABLES */
+
+
+table {
+    font-family: 'Lato', sans-serif;}
