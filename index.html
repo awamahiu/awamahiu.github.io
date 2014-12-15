@@ -9,7 +9,7 @@
     
     <!-- SVG Icon CSS -->
     <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
-      <link rel="stylesheet" href="css/foundation-icons/foundation-icons.svg" />
+      
     
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr.js"></script>
@@ -60,7 +60,7 @@
                 
                 
                 <dd class="accordion-navigation">
-                    <a href="#panel1" class="txtUpper"><i class = "fi-widget open"></i><i class = "fi-widget close"></i>Getting Started</a>
+                    <a href="#panel1" class="txtUpper"><i class = "fi-compass open"></i><i class = "fi-compass close"></i>Getting Started</a>
                     <div id="panel1" class="content">
 
                         <ul type="a">
@@ -203,8 +203,37 @@
                 </dd>
                 
                 <dd class="accordion-navigation">
-                    <a href="#panel8" class="txtUpper"><i class = "fi-lock open"></i><i class = "fi-lock close"></i>Security Features</a>
+                    <a href="#panel8" class="txtUpper"><i class = "fi-widget open"></i><i class = "fi-widget close"></i>Settings</a>
                     <div id="panel8" class="content">
+
+                        <ul type="i">
+                            <a href="#">
+                                <li>Item Heading</li>
+                            </a>
+                            <a href="#">
+                                <li>Item Heading</li>
+                            </a>
+                            <a href="#">
+                                <li>Item Heading</li>
+                            </a>
+                            <a href="#">
+                                <li>Item Heading</li>
+                            </a>
+                            <a href="#">
+                                <li>Item Heading</li>
+                            </a>
+                            <a href="#">
+                                <li>Item Heading</li>
+                            </a>
+                        </ul>
+
+
+                    </div>
+                </dd>
+                
+                <dd class="accordion-navigation">
+                    <a href="#panel9" class="txtUpper"><i class = "fi-torso open"></i><i class = "fi-torso close"></i>Account Management</a>
+                    <div id="panel9" class="content">
 
                         <ul type="i">
                             <a href="#">
@@ -254,39 +283,7 @@
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script>
-        
-        $(document).foundation({
-
-            accordion: {
-                // specify the class used for accordion panels
-                content_class: 'content',
-                // specify the class used for active (or open) accordion panels
-                active_class: 'active',
-                // allow multiple accordion panels to be active at the same time
-                multi_expand: false,
-                // allow accordion panels to be closed by clicking on their headers
-                // setting to false only closes accordion panels when another is opened
-                toggleable: true,
-            }
-        });
-
-        
-// this works for some reason...find out why        
-        $(".accordion dd").on("click", "a:eq(0)", function (event)
-      {
-        var dd_parent = $(this).parent();
-
-        if(dd_parent.hasClass('active'))
-          $(".accordion dd div.content:visible").slideToggle("normal");
-        else
-        {
-          $(".accordion dd div.content:visible").slideToggle("normal");
-          $(this).parent().find(".content").slideToggle("normal");
-        }
-      });
-        
-    </script>
+    <script src = "js/accordion-slide.js"></script>
 </body>
 
 </html>

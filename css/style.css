@@ -260,6 +260,7 @@ footer {
 .accordion i {
     margin-right: 10px;
     color: white;
+    display:inline;
 }
 
 .accordion .close {
