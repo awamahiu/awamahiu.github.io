@@ -180,7 +180,7 @@
 
 
                                             <div class="small-12 column">
-                                                <img src="img/qs/qs-displayfeed-activate.gif" />
+                                                <img src="http://placehold.it/500x384" />
                                                 <blockquote class="caption">*****CHANGE IMAGE*****</blockquote>
                                             </div>
 
@@ -243,141 +243,286 @@
 
                         <div id="qsCreatingFeeds" class="content">
 
-                            <blockquote>Some of the fields in the data feed are used to build the map. Other fields allow the user to display location-specific, user-defined data. The data feeds will use six fields to build the map. Three of these fields <em>&#40;highlighted below&#41;</em> are required fields, and the other three fields are optional fields.</blockquote>
-
-                            <blockquote>
-
-                                <p>
-                                    The <em>Latitude</em> Field
-                                    <br>The <em>Longitude</em> Field
-                                    <br>The <em>Name</em> Field
-
-                                </p>
-
-                            </blockquote>
-
-                            <p class="medium-10 column">You can only share feeds that belong to you. Feeds that belong to you are distinguishable by the number of options you have access to under the Feeds Tab.</p>
+                            <blockquote>Creating a data feed is as simple as creating and uploading a CSV file. Atlas Viewer uses fields in the CSV to build the map.</blockquote>
 
 
+                            <dl class="accordion" data-accordion>
 
-                            <div class="row">
-                                <div class="small-12 column">
-                                    <div class="smallSpace"></div>
+                                <dd class="accordion-navigation">
+                                    <a href="#qsMapBuilding">
+                                Map-Building Fields
+                            </a>
 
-                                    <table role="grid">
-                                        <thead>
-                                            <tr>
-                                                <th>FIELD</th>
-                                                <th>REQUIRED</th>
-                                                <th>DESCRIPTION</th>
-                                                <th>OPTIONS</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Latitude</td>
-                                                <td>YES</td>
-                                                <td>The latitude in decimal degrees &#40;38.889722&#41;</td>
-                                                <td>N/A</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Longitude</td>
-                                                <td>YES</td>
-                                                <td>The longitude in decimal degrees &#40;-77.008889&#41;</td>
-                                                <td>N/A</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>YES</td>
-                                                <td>Displayed in the title bar of the info window when a user clicks on a map point.</td>
-                                                <td>N/A</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Symbol</td>
-                                                <td>NO</td>
-                                                <td>The shape of the marker (pin).</td>
-                                                <td>circle, square, triangle. defaults to circle.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>status_color</td>
-                                                <td>NO</td>
-                                                <td>Specifies the color of this map point. Can be either hex format or a string option &#40;e.g., "#000000" for black or "#FFFFFF" for white&#41;.</td>
-                                                <td>String options: red, orange, blue, black, green. Defaults to blue.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>status_name</td>
-                                                <td>NO</td>
-                                                <td>Defines the meaning of this map point's color. Displayed in the info window when a user clicks on a map point. Also used to display a legend on the map for aggregation summary.</td>
-                                                <td>N/A</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div id="qsMapBuilding" class="content">
 
-                                </div>
-                            </div>
+                                        <blockquote>There are six map-building fields that can be included in the CSV. Three of these fields are required and three are optional.</blockquote>
 
-                            <div class="row">
-                                <div class="small-12 column">
+                                        <div class="row">
+                                            <div class="small-12 column">
+                                                <div class="smallSpace"></div>
 
-                                    <h5>Optional User-Defined Fields</h5>
-                                    <blockquote>Additional fields can be included in the data feed as information to be displayed in an info window when a map point is clicked. Atlas simply displays the data included in these fields, with one exception: URLs. The user can include URLs in the data feed, and Atlas will create a clickable button for each URL that open a window to that address.
-                                        <br>
-                                        <br>Feeds can have as many Optional Fields as you like. Optional Field Names, and the corresponding data, are displayed in an info window when a user clicks on a map point. If the field name has multiple words, separate the words with an underscore. Atlas on Demand will replace the underscore with a space when displaying the field name (e.g., "report_date" would be displayed as "Report Date").
-                                    </blockquote>
+                                                <table role="grid">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>FIELD</th>
+                                                            <th>REQUIRED</th>
+                                                            <th>DESCRIPTION</th>
+                                                            <th>OPTIONS</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Latitude</td>
+                                                            <td>YES</td>
+                                                            <td>The latitude in decimal degrees &#40;38.889722&#41;</td>
+                                                            <td>N/A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Longitude</td>
+                                                            <td>YES</td>
+                                                            <td>The longitude in decimal degrees &#40;-77.008889&#41;</td>
+                                                            <td>N/A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>YES</td>
+                                                            <td>Displayed in the title bar of the info window when a user clicks on a map point.</td>
+                                                            <td>N/A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Symbol</td>
+                                                            <td>NO</td>
+                                                            <td>The shape of the marker (pin).</td>
+                                                            <td>circle, square, triangle. defaults to circle.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>status_color</td>
+                                                            <td>NO</td>
+                                                            <td>Specifies the color of this map point. Can be either hex format or a string option &#40;e.g., "#000000" for black or "#FFFFFF" for white&#41;.</td>
+                                                            <td>String options: red, orange, blue, black, green. Defaults to blue.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>status_name</td>
+                                                            <td>NO</td>
+                                                            <td>Defines the meaning of this map point's color. Displayed in the info window when a user clicks on a map point. Also used to display a legend on the map for aggregation summary.</td>
+                                                            <td>N/A</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
 
-                                    <h5>Formatting</h5>
-                                    <blockquote>Field names can also specify the formatting of the data by including a format key in the field name. Format Keys must be all uppercase and appended to the end of the optional field name, separated by a hyphen (e.g., report_date-DATE).
-                                    </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
 
+                                <dd class="accordion-navigation">
+                                    <a href="#qsUserDefinedFields">
+                                User-Defined Fields
+                            </a>
 
-                                    <table role="grid">
-                                        <thead>
-                                            <tr>
-                                                <th>FORMAT / KEY</th>
-                                                <th>INPUT</th>
-                                                <th>OUTPUT</th>
+                                    <div id="qsUserDefinedFields" class="content">
 
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>-DATE</td>
-                                                <td>7/8/2014 or 8-Jul-14</td>
-                                                <td>7/8/14</td>
+                                        <blockquote>The CSV can include user-defined fields. Atlas Viewer will display this “metadata” when a user clicks on a map pin.</blockquote>
 
-                                            </tr>
-                                            <tr>
-                                                <td>-TIME</td>
-                                                <td>1:30PM or 13:30</td>
-                                                <td>1:30PM</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>-DATETIME</td>
-                                                <td>7/8/14 1:30PM or 7/8/2014 13:30</td>
-                                                <td>7/8/14 1:30PM</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>-DOLLAR</td>
-                                                <td>2310 or &#36;2320.00</td>
-                                                <td>&#36;2320.00</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>-PERCENT</td>
-                                                <td>.05 or 5&#37;</td>
-                                                <td>5.0&#37;</td>
-
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                                        <div class="row">
 
 
-                                </div>
-                            </div>
+                                            <div class="small-12 column">
+                                                <img src="img/qs/qs-displayfeed-pins.gif" />
+                                                <blockquote class="caption">***** CHANGE IMAGE *****</blockquote>
+                                            </div>
+                                        </div>
 
+                                        <p>Note that field names will be converted to “Title” case when displayed (Atlas Viewer does not, however, automatically reformat the metadata). If the field name has multiple words, separate the words with an underscore. Atlas will replace the underscore with a space when displaying the field name e.g., "date_of_service" would be displayed as "Date of Service").</p>
+
+
+                                        <div class="row">
+
+
+                                            <div class="small-12 column">
+                                                <img src="http://placehold.it/500x384" />
+                                                <blockquote class="caption">***** NEEDS ILLUSTRATION *****</blockquote>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </dd>
+
+                                <dd class="accordion-navigation">
+                                    <a href="#qsFormatting">
+                                Formatting
+                            </a>
+
+                                    <div id="qsFormatting" class="content">
+
+                                        <blockquote>Atlas Viewer displays the metadata (see User-Defined fields) exactly as it’s received; no formatting of the data). Atlas Viewer does, however, allow you to specify formatting of the metadata by attaching a format key to the field name. Format Keys must be all uppercase and appended to the end of the user-defined field name, separated by a hyphen (e.g., report_date-DATE).</blockquote>
+
+
+                                        <table role="grid">
+                                            <thead>
+                                                <tr>
+                                                    <th>FORMAT / KEY</th>
+                                                    <th>INPUT</th>
+                                                    <th>OUTPUT</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>-DATE</td>
+                                                    <td>7/8/2014 or 8-Jul-14</td>
+                                                    <td>7/8/14</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>-TIME</td>
+                                                    <td>1:30PM or 13:30</td>
+                                                    <td>1:30PM</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>-DATETIME</td>
+                                                    <td>7/8/14 1:30PM or 7/8/2014 13:30</td>
+                                                    <td>7/8/14 1:30PM</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>-DOLLAR</td>
+                                                    <td>2310 or &#36;2320.00</td>
+                                                    <td>&#36;2320.00</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>-PERCENT</td>
+                                                    <td>.05 or 5&#37;</td>
+                                                    <td>5.0&#37;</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+
+                                        <p>Atlas Viewer also gives you the option to create clickable buttons out of URLs. If you append <code>–URL</code> to the end of a user-defined field name and include URLs as the data, Atlas will create a clickable button for each URL that opens a window to that address.</p>
+
+                                        <div class="row">
+                                            <div class="small-12 column">
+                                                <img src="img/qs/qs-add-url.png" />
+                                                <blockquote class="caption">** Add screenshots of URL/Button features between CSV data and Atlas.</blockquote>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </dd>
+
+
+
+                                <dd class="accordion-navigation">
+                                    <a href="#qsSampleCSV">
+                                A Sample CSV
+                            </a>
+                                    
+                                    <div id="qsSampleCSV" class="content">
+                                        
+                                        
+                                        <blockquote>A Sample CSV file is shown below, along with an explanation of the fields that are included in the CSV. You can <a href="qs-documents/Atlas-Sample-Document.csv">download</a> the Sample CSV to your computer and use it as a practice feed to upload to Atlas Viewer.</blockquote>
+                                        
+                                        <a href="qs-documents/Atlas-Sample-Document.csv" class="button expand success">Download Sample CSV Here</a>
+
+                                        <h4>Required Map-Building Fields</h4>
+                                        <div class="row">
+
+                                            <div class="small-12 column">
+                                                <img src="img/qs/qs-required-fields.png" />
+                                                <blockquote class="caption">** Sample CSV screenshot</blockquote>
+                                            </div>
+                                            
+                                            
+                                            
+                                            <p>Atlas Viewer displays the “name” in the title bar of the info window when a map pin is clicked. “Name” can be anything; it doesn’t have to be an actual name.  In this example, the name of the policyholder was used in the “name” field.  It could just as easily have been the policy number, the claim number, the address, etc.</p>
+                                            
+                                            
+                                        </div>
+                                        
+                                        <h4>Optional Map-Building Fields</h4>
+                                        
+
+                                        <div class="row">
+                                            <div class="small-12 column">
+                                                <img src="img/qs/qs-optional-map-fields-a.png" />
+                                                <blockquote class="caption">The Optional Fields are highlighted.</blockquote>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <h6><strong>symbol</strong></h6>
+                                        
+                                        <p>The shape of the pins on the map is determined by the “symbol” field. In this example, the pins will be displayed as squares.  If the symbol field is left out of the feed, Atlas Viewer will use the default shape for pins (circle).</p>
+                                        
+
+                                        <h6><strong>status_color</strong></h6>
+
+                                        <p>Atlas Viewer will color the map pins based on the status_color field. In this example, fire claims will be displayed with a red pin, hail claims will be displayed with a blue pin, liability claims will be displayed with an orange pin, etc. Note that you have unlimited color options. You can use one of the five pre-defined color names (red, blue, green, orange, black), or you can specify the color using hex (e.g., Misc claims will be displayed as magenta in this example).</p>
+
+
+                                        <div class="row">
+                                            <div class="small-12 column">
+                                                <img src="img/qs/qs-status-color.png" />
+                                                <blockquote class="caption">The look of the pins is determined by the optional “status_color” and “symbol fields”</blockquote>
+                                            </div>
+                                        </div>
+
+
+                                        <h6><strong>status_name</strong></h6>
+
+                                        <p>The status_name field defines the meaning of the color. Atlas Viewer uses the status_name in the summary legend:</p>
+
+
+                                        <div class="row">
+                                            <div class="small-12 column">
+                                                <img src="img/qs/qs-status-name.png" />
+                                                <blockquote class="caption">** Caption? **</blockquote>
+                                            </div>
+                                        </div>
+
+                                        
+                                        
+                                        <h4>User-Defined Fields</h4>
+
+                                        <p>Atlas Viewer allows you to include optional fields to provide more data about each map point.</p>
+                                        
+                                        <div class="row">
+                                            <div class="small-12 column">
+                                                <img src="img/qs/qs-userdefinedfields.png" />
+                                                <blockquote class="caption">User-Defined Fields highlighted.</blockquote>
+                                            </div>
+                                        </div>
+                                        
+                                        <p>These optional fields are displayed when you click on a map pin:</p>
+                                        
+                                        <div class="row">
+                                            <div class="small-12 column">
+                                                <img src="img/qs/qs-sample-pin.png" />
+                                                <blockquote class="caption">** Acceptable Atlas Screenshot</blockquote>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <h4>Formatting</h4>
+
+                                        <p>The Sample CSV also includes two of the formatting keys: </p>
+                                        
+                                        <div class="row">
+                                            <div class="small-12 column">
+                                                <img src="img/qs/qs-formatting-b.png" />
+                                                <blockquote class="caption">** Screenshot Needed</blockquote>
+                                            </div>
+                                        </div>
+                                        
+
+                                    </div>
+                                </dd>
+                            </dl>
                         </div>
                     </dd>
 
