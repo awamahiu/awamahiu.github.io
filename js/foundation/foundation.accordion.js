@@ -11,9 +11,7 @@
       active_class: 'active',
       multi_expand: false,
       toggleable: true,
-      callback : function () {
-
-      }
+      callback : function () {}
     },
 
     init : function (scope, method, options) {

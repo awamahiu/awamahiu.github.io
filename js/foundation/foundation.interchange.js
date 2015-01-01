@@ -123,9 +123,9 @@
           if (passed) {
             this.settings.directives[passed
               .scenario[1]].call(this, passed.el, passed.scenario[0], function () {
-                if (arguments[0] instanceof Array) {
+                if (arguments[0] instanceof Array) { 
                   var args = arguments[0];
-                } else {
+                } else { 
                   var args = Array.prototype.slice.call(arguments, 0);
                 }
 
@@ -259,7 +259,7 @@
       else {
         var cached_split = scenario[0].split(/,\s*$/),
         path             = cached_split[0],
-        directive        = '';
+        directive        = '';               
       }
 
       return [this.trim(path), this.convert_directive(directive), this.trim(media_query)];
@@ -267,7 +267,7 @@
 
     object : function(el) {
       var raw_arr = this.parse_data_attr(el),
-          scenarios = [],
+          scenarios = [], 
           i = raw_arr.length;
 
       if (i > 0) {
@@ -322,7 +322,7 @@
 
     parse_data_attr : function (el) {
       var raw = el.attr(this.attr_name()).split(/\[(.*?)\]/),
-          i = raw.length,
+          i = raw.length, 
           output = [];
 
       while (i--) {

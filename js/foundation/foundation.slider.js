@@ -44,15 +44,15 @@
               if (!e.pageY) {
                 scroll_offset = window.scrollY;
               }
-              self.calculate_position(self.cache.active, (e.pageY ||
-                                                          e.originalEvent.clientY ||
-                                                          e.originalEvent.touches[0].clientY ||
-                                                          e.currentPoint.y)
+              self.calculate_position(self.cache.active, (e.pageY || 
+                                                          e.originalEvent.clientY || 
+                                                          e.originalEvent.touches[0].clientY || 
+                                                          e.currentPoint.y) 
                                                           + scroll_offset);
             } else {
-              self.calculate_position(self.cache.active, e.pageX ||
-                                                         e.originalEvent.clientX ||
-                                                         e.originalEvent.touches[0].clientX ||
+              self.calculate_position(self.cache.active, e.pageX || 
+                                                         e.originalEvent.clientX || 
+                                                         e.originalEvent.touches[0].clientX || 
                                                          e.currentPoint.x);
             }
           }
