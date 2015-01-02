@@ -179,7 +179,7 @@ header {
     padding: 0;
     margin: 0;
     background-color: #233141;
-    max-height: 100vh;
+    
     
 /*    background-color: #005ac1; */
 /*  background-color: #0d2334; */
@@ -194,7 +194,7 @@ background: -o-linear-gradient(-45deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.1) 100%)
 background: -ms-linear-gradient(-45deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.1) 100%); /* IE10+ */
 background: linear-gradient(135deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#33000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-max-height: 100vh;
+
     }
 
 
@@ -228,7 +228,9 @@ max-height: 100vh;
     margin-bottom: 0;
 }
 
-
+.clearFix {
+    clear: both;
+}
 
 /* ---------- CONTAINERS ----------*/
 
