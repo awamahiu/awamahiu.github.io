@@ -1,0 +1,423 @@
+/*** CUSTOM STYLES ***/
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Droid Serif', serif;
+}
+
+header {
+    padding: 1rem 0 0.5rem 0;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+header h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.extraLinks {
+    margin-top: 3rem;
+    background-color: #5f5f60;
+    color: white;
+    padding: 5%;
+    border-top: 4px solid #b7b7b7;
+    font-family: 'Lato', sans-serif;
+}
+
+.clearFix {
+    clear: both;
+}
+
+.compass {
+    padding-top:20px;
+}
+
+.compass h4 {
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+
+.compass h5 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.compass p {
+    
+    padding-left: 0;
+    margin-bottom: 0%;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.compass ol {
+    list-style: none;
+}
+
+.compass li {
+/*    border-top: 1px dotted #ccc; */
+    margin-top: 2rem;
+    padding-top: 0rem;
+    color: #555;
+}
+
+.compass img {
+    padding-top: 2.5%;
+    width: 100%;
+}
+
+.compass .blockquote {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95rem;
+    padding-top: 0;
+    border-left: 1px solid #72bc45;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+.midWidth {
+    width: 50%;
+    margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+.tinySpace {
+    margin-top: 2.5px;
+}
+
+.smallSpace {
+    margin-top: 30px;
+}
+
+.midSpace {
+    margin-top: 60px;
+}
+
+.bigSpace {
+    margin-top: 100px;
+}
+
+.hero {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    z-index: 1;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.shadow {
+    -webkit-box-shadow: 0 -10px 25px rgba(51, 51, 51, 0.1);
+    -moz-box-shadow: 0 -10px 25px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 -10px 25px rgba(51, 51, 51, 0.1);
+}
+
+
+/* RANDOM TYPE TREATMENT */
+
+.txtUpper {
+        text-transform: uppercase;
+    }
+
+.aboutAtlas {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border-left: 5px solid #84d875;
+}
+
+.caption {
+        padding-left: 20px;
+        padding-bottom: 9px;
+        margin-top:1%;
+        font-size: 1rem;
+        border-left: 5px solid #5dbee2;
+        color: #909090;
+        font-family: monospace;
+        background-color: #fafafa;
+        font-style: italic;
+    }
+
+.captionB {
+        padding-left: 20px;
+        padding-bottom: 9px;
+        margin-top:1%;
+        font-size: 1rem;
+        border-left: 5px solid #ff7f7f;
+        color: #909090;
+        font-family: monospace;
+        background-color: #fafafa;
+        font-style: italic;
+    }
+
+.captionC {
+        padding-left: 20px;
+        padding-bottom: 9px;
+        margin-top:1%;
+        font-size: 1rem;
+        border-left: 5px solid #9a74f0;
+        color: #909090;
+        font-family: monospace;
+        background-color: #fafafa;
+        font-style: italic;
+    }
+
+/* FOOTER */
+
+footer {
+    padding-top: 0px;
+}
+
+/* ATLAS BUTTON */
+.atlas-Reg-Btn {
+    background-color: #108910;
+}
+
+.atlas-Reg-Btn:hover {
+    background-color: #2ea72e;
+}
+
+/* ACCORDION STYLE */
+
+.accordion {
+  margin-bottom: 0; }
+  .accordion:before, .accordion:after {
+    content: "";
+    display: table; }
+  .accordion:after {
+    clear: both; }
+  .accordion .accordion-navigation, .accordion dd {
+    display: block;
+    margin-bottom: 0 !important;}
+    .accordion .accordion-navigation.active > a, .accordion dd.active > a {
+/*        font-weight: bold;    */
+        font-size: 1rem;
+      background: #414850; }
+    .accordion .accordion-navigation > a, .accordion dd > a {
+        border: 1px solid #4f5b67 ;
+      background: #233140;
+      color: white;
+      padding: 0.7rem;
+      display: block;
+      font-family: "Lato", Helvetica, Roboto, Arial, sans-serif;
+      font-size: 1rem;
+        font-weight: 300;
+        }
+      .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+        background: #414850 ;
+      }
+    .accordion .accordion-navigation > .content, .accordion dd > .content {
+      display: none;
+      padding: 0.9375rem; }
+      .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
+    
+        display: block;
+        background: #fafafa;
+      }
+ 
+    
+    .accordion-navigation ul {
+        margin-bottom: 0
+    }
+
+    .accordion-navigation ul a li {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        list-style: none;
+     /* text-transform: uppercase; */
+        color: #6c5beb;
+    }
+
+    .accordion-navigation ul a li:hover {
+        color: #4a3ea7;
+        margin-left: 3px;
+    }
+
+.accordion i {
+    margin-right: 10px;
+    color: white;
+    display:inline;
+}
+
+.accordion .close {
+    display: none;
+}
+
+.accordion .accordion-navigation:hover i {
+    color: #ffffff;
+}
+
+.accordion .accordion-navigation.active i {
+    color: #d3af17;
+}
+
+.accordion .accordion-navigation.active .close {
+    display: block;
+    float: left;
+}
+
+.accordion .accordion-navigation.active .open {
+    display: none;
+}
+
+
+/* CUSTOM BREADCRUMBS */
+.breadcrumb-bg {
+    background-color: #233140;
+    padding: 5px;
+}
+
+
+.breadcrumbs {
+    font-family: 'Lato', sans-serif;
+  display: block;
+  padding: 0.5625rem 0.875rem 0.5625rem;
+  overflow: hidden;
+  margin-left: 0;
+  list-style: none;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  background-color: rgba(51, 51, 51, 0);
+  border-color:  0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px; }
+  .breadcrumbs > * {
+    margin: 0;
+    
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    text-transform: uppercase;
+    color: #fff; }
+    .breadcrumbs > *:hover a, .breadcrumbs > *:focus a {
+      text-decoration: underline; }
+    .breadcrumbs > * a {
+      color: #008cba;}
+
+
+
+    .breadcrumbs > *.current {
+        font-weight: 800;
+        color: #d3af17;
+    }
+      .breadcrumbs > *.current a {
+          cursor: pointer;
+        color: #ddc86f;
+      }
+      .breadcrumbs > *.current:hover, .breadcrumbs > *.current:hover a, .breadcrumbs > *.current:focus, .breadcrumbs > *.current:focus a {
+          cursor: pointer;
+        text-decoration: none;
+        color: #ddc86f;
+      }
+
+
+    .breadcrumbs > *.unavailable {
+      color: #999999; }
+      .breadcrumbs > *.unavailable a {
+        color: #999999; }
+      .breadcrumbs > *.unavailable:hover, .breadcrumbs > *.unavailable:hover a, .breadcrumbs > *.unavailable:focus,
+      .breadcrumbs > *.unavailable a:focus {
+        text-decoration: none;
+        color: #999999;
+        cursor: default; }
+    .breadcrumbs > *:before {
+      content: ">";
+      color: #fff;
+      margin: 0 0.35rem;
+      position: relative;
+      top: 0px; }
+    .breadcrumbs > *:first-child:before {
+      content: " ";
+      margin: 0; }
+
+/* Accessibility - hides the forward slash */
+[aria-label="breadcrumbs"] [aria-hidden="true"]:after {
+  content: "/"; }
+
+
+/* ITEM (ICON) STYLES */
+
+.item {
+    color: white;
+}
+
+
+/* topNav
+.topNav {
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    background-color: #edb945;
+    color: white;
+    text-transform: uppercase; 
+} */
+
+/* breadNav */
+.breadNav {
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    background-color: #2f637e;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* SIDE NAV */
+
+.side-nav {
+    text-align: right;
+    text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  margin: 55px 0 0 0;
+  list-style-type: none;
+  list-style-position: outside;}
+  .side-nav li {
+    font-size: 0.875rem;
+    font-weight: normal; }
+    .side-nav li a:not(.button) {
+    margin:0;
+      padding: 0;
+      color: #222;
+      margin: 0;
+       }
+      .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
+        background: rgba(230, 0, 0, 0.00);
+        color: #ccc; 
+        margin:0;
+      padding: 0;}
+    .side-nav li.active > a:first-child:not(.button) {
+      color: #333;
+      font-weight: normal; }
+
+.side-nav li .heading {
+      color: #008cba;
+      font-size: 0.875rem;
+      font-weight: bold;
+      text-transform: uppercase; }
+   
+/* TABLES */
+
+
+table {
+    font-family: 'Lato', sans-serif;}
