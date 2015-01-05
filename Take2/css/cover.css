@@ -2,6 +2,10 @@
  * Globals
  */
 
+html * {   
+    -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
 /* Links */
 a,
 a:focus,
@@ -9,6 +13,7 @@ a:hover {
   color: #fff;
     
 }
+
 
 /* Custom default button */
 .btn-default {
