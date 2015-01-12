@@ -95,8 +95,9 @@ nav .left {
 
 nav .left img {
     float: left;
-    margin-right: 1px;
-    width: 28px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 22px;
 }
 
 nav .right {
