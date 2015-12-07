@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300,300italic,400italic);
+html,
+body {
+    /*    width: 100%;*/
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Lato', Open Sans, sans-serif;
+    color: #6d6e71;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+/*
+    NAVIGATION
+*/
+
+.brand {
+    cursor: pointer;
+    float: left;
+}
+
+.brand h1 {
+    font-weight: 400;
+    font-size: 2.5em;
+    padding: 0;
+    margin-bottom: 0;
+    color: #0077a4;
+}
+
+.brand p {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.navigation {
+    opacity: 0;
+}
+
+nav {
+    float: right;
+    margin-top: 35px;
+}
+
+nav ul li {
+    float: left;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #6d6e71;
+}
+
+nav ul li .active-page {
+    color: #0077a4;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.dropdown {
+    visibility: hidden;
+    float: right;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 780px) {
+    .brand {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    nav {
+        float: none;
+        display: none;
+    }
+}
+
+
+/*
+    MAIN CONTENT
+*/
+
+.section {
+    padding: 18.75% 0 0;
+}
+
+.section-contact {
+    padding: 10.25% 0 0;
+}
+
+.main-content {
+    opacity: 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+.exposition {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.main-content .contact-icons {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin: 20px 5px 0;
+}
+
+.main-content .exposition ul {
+    list-style: none;
+    height: 65px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-content .exposition ul li {
+    float: left;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 45px;
+    height: 45px;
+    background-color: none;
+}
+
+.fa {
+    font-size: 2em;
+}
+
+.contact-icons a {
+    opacity: 1;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contact-icons a:hover {
+    opacity: 0.75;
+    transition: opacity ease-in-out 0.25s;
+}
+
+.contact-icons .fa-github {
+    color: #333;
+}
+
+.contact-icons .fa-linkedin {
+    color: #0077b5;
+}
+
+.contact-icons .fa-file-text {
+    color: #8eea78;
+}
+
+.contact-icons .fa-paper-plane-o {
+    color: #0077a4;
+}
+
+h2.title {
+    /*    margin-top: 15%;*/
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.lead {
+    max-width: 780px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.process-container {
+    margin: 10px 0;
+}
+
+.process-items {
+    margin-top: 25px;
+}
+
+.process-container h3 {
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.main-content .process-items img {
+    width: 75px;
+    height: 75px;
+}
+
+.project {
+    margin: 35px 0;
+    text-align: left;
+}
+
+.project-hero {
+    background-color: #222;
+    height: 250px;
+}
+
+.layout-block-red {
+    height: 175px;
+    background-color: red;
+}
+
+.layout-block-yellow {
+    height: 175px;
+    background-color: yellow;
+}
+
+.layout-block-blue {
+    height: 175px;
+    background-color: blue;
+}
+
+.layout-block-black {
+    height: 175px;
+    background-color: black;
+}
+
+.work-tools {
+    margin-top: 30px;
+}
+
+.work-tools img:hover {
+    opacity: 0.5;
+/*    padding: 25px;*/
+    -webkit-transition: all ease-out 0.25s;
+    transition: all ease-out 0.25s;
+}
+
+.work-tools img {
+    opacity: 0.75;
+/*    padding: 15px;*/
+    text-align: center;
+    background-color: none;
+    width: 100%
+/*
+    -webkit-transition: all ease-out 0.25s;
+    transition: all ease-out 0.25s;
+*/
+}
+
+
+/*
+    FOOTER
+*/
+
+.main-content:after {
+    content: "";
+    display: block;
+}
+
+.site-footer,
+.main-content:after {
+    /* .push must be the same height as footer */
+    height: 100px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 15px solid #0077a4;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
