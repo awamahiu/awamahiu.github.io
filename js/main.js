@@ -3,6 +3,8 @@ $(function () {
     var currentPage = window.location.pathname;
     console.log(currentPage);
 
+    
+// Moving main site to CMS to better manage portfolio...
 //    if (currentPage === "/work") {
 //        $(".workpage").addClass("active-page");
 //    } else {
@@ -31,7 +33,6 @@ $(function () {
     $('#sendemail').tooltip();
     
     var date = new Date();
-    console.log(date.getFullYear());
+    $(".footer-date").append(date.getFullYear());
 
 }); // Main function end
-;
