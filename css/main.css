@@ -2,15 +2,12 @@
 html,
 body {
     /*    width: 100%;*/
+    font-family: 'Lato', Open Sans, sans-serif;
+    color: #6d6e71;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-}
-
-body {
-    font-family: 'Lato', Open Sans, sans-serif;
-    color: #6d6e71;
     font-weight: 300;
     font-size: 16px;
 }
@@ -46,6 +43,9 @@ body {
 nav {
     float: right;
     margin-top: 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8em;
 }
 
 nav ul li {
@@ -58,10 +58,9 @@ nav ul li a {
     color: #6d6e71;
 }
 
-nav ul li .active-page {
+.active-page {
     color: #0077a4;
     font-weight: 900;
-    text-decoration: underline;
 }
 
 .dropdown {
@@ -71,6 +70,10 @@ nav ul li .active-page {
 }
 
 @media screen and (max-width: 780px) {
+    body {
+        overflow: scroll;
+    }
+    
     .brand {
         float: none;
         text-align: center;
@@ -247,6 +250,20 @@ h2.title {
 
 
 /*
+    PORTFOLIO / WORK
+*/
+
+.portfolio-snaps {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.portfolio-snaps img {
+    margin: 15px 0;
+    border-radius: 2.5px;
+}
+
+/*
     FOOTER
 */
 
@@ -262,11 +279,13 @@ h2.title {
 }
 
 .footer {
+    background-color: #fff;
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
     border-bottom: 15px solid #0077a4;
-    padding-top: 100px;
+    padding-top: 40px;
     padding-bottom: 25px;
+    border-top: 1px solid #ccc;
 }
