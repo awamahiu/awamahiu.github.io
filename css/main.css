@@ -323,10 +323,13 @@ h2.title {
     display: none;
 }
 
-h3.modal-title {
-  font-size: 1.85em;
+h4.modal-title {
+    font-size: 1.125em;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
+
+
 /*
     FOOTER
 */
@@ -390,7 +393,7 @@ h3.modal-title {
     #hamburger {
         display: block;
     }
-    h3.modal-title {
-        font-size: 1.5em;
+    h4.modal-title {
+        font-size: 1.125em;
     }
 }
