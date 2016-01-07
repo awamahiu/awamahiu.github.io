@@ -40,9 +40,10 @@
 
                 <nav>
                     <ul>
-                       <li><a href="/work">Work</a></li>
+                        <li><a href="/work">Snaps</a></li>
+<!--                        <li><a href="/caseStudies">Case Studies</a></li>-->
                         <li><a href="docs/AliWamahiu_Resume_Jan2016.pdf">Resume</a></li>
-                        
+
                     </ul>
                 </nav>
 
@@ -78,6 +79,9 @@
 
                         <a href="mailto:aliwamahiu@gmail.com?subject=Salutations" id="sendemail" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope-o"></i></a>
 
+                       <a href="/work" id="snap-icon" data-toggle="tooltip" data-placement="bottom" title="Snaps"><i class="fa fa-picture-o"></i></a>
+
+                       
                         <a href="docs/AliWamahiu_Resume_Jan2016.pdf" id="resume" data-toggle="tooltip" data-placement="bottom" title="Resume"><i class="fa fa-file-text"></i></a>
 
 
@@ -93,14 +97,31 @@
 
 
         <div class="container-fluid footer">
-            <div class="row">
+        <div class="row">
 
-                <p>&copy; Ali Wamahiu | <span class="footer-date"></span>
+            <p id="copyright">&copy; Ali Wamahiu | <span class="footer-date"></span>
+            </p>
 
-                </p>
+            <div class="dropdown">
+                <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="hamburger">
+              <i class="fa fa-bars"></i>
+            </span>
 
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                   <li><a href="/">Home</a></li>
+                   
+                    <li><a href="/work">Snaps</a></li>
+<!--                    <li><a href="/caseStudies">Case Studies</a></li>-->
+                    <li>
+                    <a href="../docs/AliWamahiu_Resume_Jan2016.pdf">Resume</a></li>
+                </ul>
             </div>
+
+
         </div>
+    </div>
 
 
 
