@@ -69,7 +69,6 @@ nav ul li a {
     position: relative;
     top: -2px;
     float: right;
-    padding: 10px
 }
 
 #hamburger a {
@@ -81,7 +80,13 @@ nav ul li a {
     background-color: none;
 }
 
-.dropdown:hover {
+.dropdown a {
+    display: block;
+    height: 50px;
+    padding: 10px;
+}
+
+.dropdown a:hover {
     cursor: pointer;
 }
 
