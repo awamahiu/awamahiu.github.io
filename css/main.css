@@ -69,6 +69,7 @@ nav ul li a {
     position: relative;
     top: -2px;
     float: right;
+    padding: 10px
 }
 
 #hamburger a {
@@ -86,7 +87,7 @@ nav ul li a {
 
 .dropdown-menu {
     top: -155px;
-    left: -133px;
+    left: -122px;
 }
 
 .dropdown-menu li a {
@@ -149,8 +150,8 @@ nav ul li a {
 
 .contact-icons a {
     opacity: 1;
-    margin: 0 10px;
     text-decoration: none;
+    padding: 10px
 }
 
 .contact-icons a:hover {
@@ -389,6 +390,8 @@ h4.modal-title {
     }
     #copyright {
         float: left;
+        position:relative;
+        top: 7px
     }
     #hamburger {
         display: block;
@@ -396,4 +399,16 @@ h4.modal-title {
     h4.modal-title {
         font-size: 1.125em;
     }
+}
+
+@media screen and (max-width: 390px) {
+    .fa {
+    font-size: 1.5em;
+}
+
+.contact-icons a {
+    opacity: 1;
+    text-decoration: none;
+    padding: 10px
+}
 }
