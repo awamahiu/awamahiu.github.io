@@ -81,9 +81,7 @@ nav ul li a {
 }
 
 .dropdown a {
-    display: block;
-    height: 50px;
-    padding: 10px;
+    display: none;
 }
 
 .dropdown a:hover {
@@ -395,7 +393,7 @@ h4.modal-title {
     }
     #copyright {
         float: left;
-        position:relative;
+        position: relative;
         top: 7px
     }
     #hamburger {
@@ -404,16 +402,19 @@ h4.modal-title {
     h4.modal-title {
         font-size: 1.125em;
     }
+    .dropdown a {
+        display: inline-block;
+        padding: 10px 10px 5px;
+    }
 }
 
 @media screen and (max-width: 390px) {
     .fa {
-    font-size: 1.5em;
-}
-
-.contact-icons a {
-    opacity: 1;
-    text-decoration: none;
-    padding: 10px
-}
+        font-size: 1.5em;
+    }
+    .contact-icons a {
+        opacity: 1;
+        text-decoration: none;
+        padding: 10px
+    }
 }
