@@ -1,0 +1,172 @@
+{   
+    "propertyDetails": {      
+        "igdId": "123123123123123abcd",
+              "propertyId": "123456",
+              "yearBuilt": "1990",
+              "floodZone": "X"   
+    },
+       "propertyAddress": {      
+        "address1": "123 Fake street",
+              "address2": "",
+              "city": "Tampa",
+              "state": "fl",
+              "zip": "12345",
+              "country": "USA"   
+    },
+       "status": {      
+        "code": 0,
+              "description": "Policy Issued"   
+    },
+       "mailingAddress": {      
+        "address1": "123 Fake street",
+              "address2": "",
+              "city": "Tampa",
+              "state": "fl",
+              "zip": "12345",
+              "country": "USA"   
+    },
+       "policyholders": [
+      {         
+            "order": 1,
+                     "firstName": "Bob",
+                     "lastName": "Smith",
+                     "email": "bob@smith.com",
+                     "phone": "1231231234",
+                     "id": 12      
+            },
+       {         
+            "order": 2,
+                     "firstName": "Amy",
+                     "lastName": "Smith",
+                     "email": "amy@smith.com",
+                     "phone": "1231231234",
+                     "id": 21      
+            }
+   ],
+       "policyDetails": {      
+        "id": "1231212",
+              "number": "123123",
+              "product": "AF3",
+              "effectiveDate": "2016-07-14T00:00:00",
+              "endDate": "2017-07-14T00:00:00",
+              "totalPremium": 123   
+    },
+       "coverages": [
+      {         
+            "code": "Building",
+                     "name": "Building",
+                     "letter": "A",
+                     "limit": 234900,
+                     "valuationMethod": "Replacement Cost"      
+            },
+       {         
+            "code": "Contents",
+                     "name": "Personal Property",
+                     "letter": "D",
+                     "limit": 58800,
+                     "valuationMethod": "Actual Cash Value"      
+            }
+   ],
+       "deductibles": [
+      {         
+            "code": "Building",
+                     "name": "Building",
+                     "amount": 20000      
+            },
+       {         
+            "code": "Contents",
+                     "name": "Personal Property",
+                     "amount": 20000      
+            }
+   ],
+       "agency": {      
+        "agent": {         
+            "name": "Frank Smith",
+                     "email": "frank@email.com",
+                     "id": 123      
+        },
+              "name": "Typtap Management Co.",
+              "email": "contact@typtap.com",
+              "id": 123   
+    },
+       "mortgages": [
+      {         
+            "name": "First Bank of Awesome",
+                     "address": {            
+                "address1": "123 Fake street",
+                            "address2": "",
+                            "city": "Tampa",
+                            "state": "fl",
+                            "zip": "12345",
+                            "country": "USA"         
+            },
+                     "loadNumber": "123",
+                     "order": 1,
+                     "id": 333      
+            },
+       {         
+            "name": "Second Bank of Moar Awesome",
+                     "address": {            
+                "address1": "321 Unreal Blvd",
+                            "address2": "",
+                            "city": "Tampa",
+                            "state": "fl",
+                            "zip": "54321",
+                            "country": "USA"         
+            },
+                     "loadNumber": "321",
+                     "order": 2,
+                     "id": 444      
+            }
+   ],
+       "additionalInsured": [
+      {         
+            "name": "ai 1",
+                     "address": {            
+                "address1": "123 Fake street",
+                            "address2": "",
+                            "city": "Tampa",
+                            "state": "fl",
+                            "zip": "12345",
+                            "country": "USA"         
+            },
+                     "loadNumber": "123",
+                     "order": 1,
+                     "id": 333      
+            },
+       {         
+            "name": "ai 2",
+                     "address": {            
+                "address1": "123 Fake street",
+                            "address2": "",
+                            "city": "Tampa",
+                            "state": "fl",
+                            "zip": "54321",
+                            "country": "USA"         
+            },
+                     "loadNumber": "123",
+                     "order": 1,
+                     "id": 333      
+            }
+   ],
+       "paymentDetails": {      
+        "billTo": 1,
+              "billToName": "Bob Smith",
+              "billPlan": "A",
+              "paymentNeeded": "346",
+              "paymentReceived": 0,
+              "balance": "346",
+              "history": [
+         {            
+                "id": 1233123,
+                            "amount": 30,
+                            "date": "2016-02-15T00:00:00",
+                            "method": "Cash"         
+                }
+      ],
+              "nextPayment": {         
+            "amount": 316,
+                     "date": "2016-04-15T00:00:00"      
+        }   
+    }
+}
