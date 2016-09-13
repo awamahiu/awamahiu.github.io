@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{> favicon}}
+
+    <title>Ali Wamahiu | UI/UX Designer | {{title }}</title>
+
+    {{> styles}}
+    
+    {{#if ENV_DEVELOPMENT}}
+        <script src="http://localhost:35729/livereload.js"></script>
+    {{/if}}
+</head>
+
+<body>
+   
+    {{{body}}}
+    
+    
+    {{> footer}}
+    {{> overlayMenu}}
+    
+    {{> scripts}}
+    {{{pageScript}}}
+</body>
+
+</html>

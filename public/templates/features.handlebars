@@ -1,0 +1,18 @@
+{{#each Project}}
+
+<div class="col-sm-6 col-xs-12">
+    <a a href="{{page}}" class="feature--image">
+        <span class="feature-copy feature-copy--top">
+            <small>{{projectType}}</small>
+            <h3>{{projectName}}</h3>
+        </span>
+
+        <img src="{{imgSrc}}" alt="{{imgAlt}}" class="img-responsive">
+
+        <span class="feature-copy feature-copy--bottom">
+            <small>View Project</small>
+        </span>
+    </a>
+</div>
+
+{{/each}}
